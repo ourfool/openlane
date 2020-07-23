@@ -274,7 +274,7 @@ This [file](./designs/README.md) also includes useful information about the desi
 
 ## Stages
 
-OpenLane flow consists of several stages. Each stage may consist of multiple sub-stages. OpenLane can run either interactively (the designer executes the flow steps one by one) or non-interactively (default; running all the flow steps one after another):
+OpenLaneの実行フローは複数のステージから構成されています。各ステージは複数のサブステージで構成されます。OpenLaneは対話的に実行（設計者がフローのステップを一つずつ実行する）または、非対話的に実行することができます（デフォルトでは、すべてのフローのステップを順に実行する）:
 
 1. **Synthesis**
     1. `yosys` - Performs RTL synthesis
@@ -366,7 +366,7 @@ designs/spm
 
 ## Flow configuration
 
-OpenLane requires some environment variables to be defined. These variables are split into three main categories:
+OpenLaneの利用にあたっていくつかの環境変数を定義する必要があります。これらの環境変数は以下の3つのカテゴリに分かれています:
 
 1. PDK specific
 2. Flow specific
