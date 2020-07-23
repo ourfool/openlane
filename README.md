@@ -26,8 +26,7 @@
 - [Regression And Design Configurations Exploration](#regression-and-design-configurations-exploration)
 
 # Overview
-
-OpenLane is an automated RTL to GDSII flow based on several components including OpenRoad, Yosys, Magic, Netgen, Fault and custom methodology scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII - this capability will be released in the coming weeks with completed SoC design examples that have been sent to SkyWater for fabricaiton.
+OpenLaneは、OpenRoad、Yosys、Magic、Netgen、Fault、およびデザインの探索と最適化のためのカスタムメソドロジースクリプトを含むいくつかのコンポーネントをベースにした、RTLからGDSIIまでの自動化されたフローです。このフローは、RTLからGDSIIに至るまで、ASICの完全な実装ステップを実行します。この機能は、SkyWaterにファブリケーションのために送られた完成したSoCデザインの例とともに、近日中にリリースされる予定です。
 
 
 
@@ -36,7 +35,7 @@ OpenLane is an automated RTL to GDSII flow based on several components including
  - Docker
 
 # Getting Started - Directory Setup
-To simplify the running process the following setup is suggested:
+実行プロセスを簡単にするために、以下の設定が推奨されています:
 
 ```
 openlane_working_dir
@@ -64,15 +63,15 @@ Clone & build OpenLANE:
     cd ..
 ```
 
-For more details about the docker container and its process, the [following instructions][1] walk you through the process of using docker containers to build the needed tools then integrate them into OpenLane flow.
+dockerコンテナとそのプロセスの詳細については、 [following instructions][1] では、dockerコンテナを使用して必要なツールを構築し、それをOpenLaneフローに統合するプロセスを説明しています。
 
 # Getting Started - PDK Setup
 
-Before running the flow, you need to have at least one PDK set up on your machine under openlane_working_dir/pdks/. 
+フローを実行する前に、少なくとも1つのPDKを openlane_working_dir/pdks/ に設定しておく必要があります。
 
 ## Setting up skywater-pdk
 
-In this section we will explain how to setup the [skywater-pdk](https://github.com/google/skywater-pdk) variants on openlane. However, the steps explained should give a good idea about how to setup other pdks.
+このセクションでは、オープンレーン上での [skywater-pdk](https://github.com/google/skywater-pdk) の設定方法を説明します。説明した手順は、他のPDKのセットアップ方法の際にも参考となるでしょう。
 
 - Clone and build one skywwater-pdk variant(s) inside the pdks directory:
     - To setup one variant only
@@ -131,7 +130,7 @@ Refer to [this][24] for more details on the structure.
 
 ## Running the flow
 
-After building the docker image, issue the following command to open the docker container from the project root, to ensure that the output files persist after exiting the container:
+dockerイメージをビルドした後、以下のコマンドを実行してプロジェクトのルートからdockerコンテナを開き、コンテナを終了した後も出力ファイルが持続するようにします。:
 
 
 ```bash
